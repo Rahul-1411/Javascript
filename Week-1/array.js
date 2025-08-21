@@ -1,0 +1,13 @@
+let fruits=["apple","banana","cherry"];
+let inFruits = new Array("kiwi","avacado","dragon fruit");
+console.log(fruits);
+console.log(inFruits);
+console.log(typeof(fruits));
+console.log(typeof(inFruits));
+fruits[0] = "Mango";
+fruits.push("New item");
+fruits.unshift("Pehla item");
+fruits.pop(fruits);
+console.log(fruits.length);
+console.log(fruits);
+console.log(fruits[0]);
