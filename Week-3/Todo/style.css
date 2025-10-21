@@ -1,0 +1,127 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+  background: #f2f5f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+/* Title */
+h1 {
+  color: #2c3e50;
+  font-size: 26px;
+  margin-bottom: 18px;
+}
+
+/* Main container */
+.Container {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  width: 85%;
+  max-width: 850px;
+  padding: 20px;
+}
+
+/* Input section */
+.Container > div:first-child {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#todo-input {
+  width: 65%;
+  padding: 8px 12px;
+  font-size: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#todo-input:focus {
+  border-color: #3498db;
+}
+
+#add-button {
+  background: #3498db;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#add-button:hover {
+  background: #2176bd;
+}
+
+/* Todo list (small card grid) */
+#todo-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+/* Each small todo card */
+#todo-list li {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#todo-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Todo text */
+#todo-list li span {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+  word-wrap: break-word;
+}
+
+/* Delete button */
+#todo-list li button {
+  align-self: flex-end;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.3s;
+}
+
+#todo-list li button:hover {
+  background: #c0392b;
+}
+
+
+
