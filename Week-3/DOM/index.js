@@ -17,6 +17,7 @@ function changeBackgroundColor(color)
 //     console.log("Another things happens");
 // })
 
+// Black and white mode
 const themeButton = document.getElementById('Theme-button');
 themeButton.addEventListener('click',()=>{
     console.log(document.body.style.backgroundColor);
