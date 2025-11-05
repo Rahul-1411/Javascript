@@ -12,3 +12,4 @@ let symbolVar = Symbol(); // Symbol
 console.log(typeof(nothing));
 console.log(typeof(undefinedVar));
 
+
